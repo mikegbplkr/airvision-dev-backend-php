@@ -23,8 +23,7 @@ class CCTVController{
             $input['installation_location'], 
             $input['isLive'] 
         );
-
-
+ 
         if ($stmt->execute()) {
             echo json_encode(["message" => "CCTV added", "id" => $stmt->insert_id]);
         } else {
